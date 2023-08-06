@@ -5,25 +5,31 @@ Proyecto Backend con FastAPI (Python) y PostgreSQL para el registro de puntucion
 ## Requisitos
 
 - Python 3.8
-- PostgreSQL 13.2
+- PostgreSQL 15.1
+
+## Configuración de la Base de Datos
+
+En la carpeta raíz del proyecto, crea un archivo llamado .env y define las siguientes variables de entorno:
+
+```dotenv
+Copy code
+DB_USERNAME=usuario
+DB_PASSWORD=password
+DB_HOSTNAME=database_host
+DB_PORT=puerto
+DB_NAME=nombre_db
+```
+
+Asegúrate de reemplazar los valores usuario, password, database_host, puerto y nombre_db con los datos de acceso correspondientes a tu base de datos. Si estás utilizando un servicio de bases de datos en la nube, asegúrate de proporcionar los detalles de conexión correctos.
 
 ## Instalación
 
 Clonar el repositorio
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/danmondra/pruebas-tecnicas.git
 ```
 En la carpeta raíz del proyecto :
-
-Crear un archivo .env con las siguientes variables de entorno :
-( Recuerda ajustalo a tu base de datos Local o en Nube )
-
-DB_USERNAME=usuario
-DB_PASSWORD=password
-DB_HOSTNAME=database_host
-DB_PORT=puerto
-DB_NAME=nombre_db
 
 Ejecutar el siguiente comando para instalar las dependencias
 
@@ -56,6 +62,14 @@ if __name__ == '__main__':
                 )
 
 ```
+
+Documentacion de las APIREST ( Local ) la encontraras en la siguiente ruta
+
+```bash
+http://localhost:8000/docs
+
+```
+
 
 ## Contribución
 

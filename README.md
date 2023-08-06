@@ -12,7 +12,6 @@ Proyecto Backend con FastAPI (Python) y PostgreSQL para el registro de puntucion
 En la carpeta raíz del proyecto, crea un archivo llamado .env y define las siguientes variables de entorno:
 
 ```dotenv
-Copy code
 DB_USERNAME=usuario
 DB_PASSWORD=password
 DB_HOSTNAME=database_host

@@ -13,3 +13,6 @@ venv/
 # Ignorar archivos generados por poetry
 poetry.lock
 pyproject.toml
+
+# Ignorar archivo de entorno
+.env

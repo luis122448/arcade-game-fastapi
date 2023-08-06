@@ -1,0 +1,15 @@
+# Ignorar archivos de Bytecode de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos de caché de IDE
+.vscode/
+
+# Ignorar el directorio del entorno virtual
+venv/
+
+# Ignorar archivos generados por poetry
+poetry.lock
+pyproject.toml

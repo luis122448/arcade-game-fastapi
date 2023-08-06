@@ -6,7 +6,9 @@ class ErrorHandler(BaseHTTPMiddleware):
     def __init__(self, app: FastAPI) -> None:
         super().__init__(app)
 
-    async def dispatch(self, request: Request, call_next: DispatchFunction) -> Response | JSONResponse:
+    # async def dispatch(self, request: Request, call_next: DispatchFunction) -> Response | JSONResponse:
+    async def dispatch(self, request: Request, call_next: DispatchFunction) -> Union[Response, JSONResponse]:
+
         try:
             return await call_next(request)
         except HTTPException as e:

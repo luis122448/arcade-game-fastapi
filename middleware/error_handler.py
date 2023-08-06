@@ -1,6 +1,7 @@
 from starlette.middleware.base import BaseHTTPMiddleware, DispatchFunction
 from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import HTMLResponse, JSONResponse
+from typing import Union
 
 class ErrorHandler(BaseHTTPMiddleware):
     def __init__(self, app: FastAPI) -> None:
